@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Research Documentation</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <style>
+    body {
+      padding-top: 80px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../../docs.html">Research Documentation</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+        aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Visualization Methods</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../../docs.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../catboost-native/docs.html">catboost-native</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">scikit-based</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../js-based/docs.html">js-based</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../sankey/docs.html">sankey</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../baobabdt/docs.html">baobabdt</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h2>Scikit Based Visualizations</h2>
+    <p>Scikit-learn is a popular open-source machine learning library for Python. It provides a wide range of tools for
+      various machine learning tasks such as classification, regression, clustering, and dimensionality reduction.
+      Scikit-learn also includes tools for data preprocessing, model selection, and evaluation, making it a
+      comprehensive and user-friendly library for machine learning in Python.</p>
+    <br>
+
+    <h4>DecisionTreeClassifier</h4>
+    <br>
+    <img src="scikit/visualizations/clf_graphviz.png" class="img-fluid" alt="...">
+    <p>General decision tree visualization, non-colored nodes have no majority prediction. The more is the color of the
+      node satured the more samples of one specific class have majority over others.. Values are described in internal
+      nodes as well.</p>
+    <br>
+    <a href="scikit/scikit_classifier.html" target="_blank">See the Original Jupyter Notebook</a>
+    <br>
+    <br>
+
+    <h4>DecisionTreeRegressor</h4>
+    <br>
+    <img src="scikit/visualizations/rgr_graphviz.png" class="img-fluid" alt="...">
+    <p>General decision tree visualization, darker color of the node indicate higher predicted target values. Values are
+      described in internal nodes as well.</p>
+    <br>
+    <br>
+    <a href="scikit/scikit_classifier.html" target="_blank">See the Original Jupyter Notebook</a>
+    <br>
+    <br>
+
+    <h3>Dtreeviz</h3>
+    <p>The Python-based dtreeviz library is a visualization tool for decision trees. It allows users to create
+      interactive visualizations of decision trees, which can be used to gain insights into the structure and behavior
+      of these models. Additionally, dtreeviz provides a range of features that enable users to customize their
+      visualizations, making it a powerful tool for data exploration and analysis.
+      The dtreeviz library in Python is compatible with several decision tree libraries, including scikit-learn,
+      XGBoost, TensorFlow.
+      <br>
+      <a href="https://explained.ai/decision-tree-viz/" target="_blank">https://explained.ai/decision-tree-viz/</a></p>
+    <br>
+    <h4>Classifier</h4>
+    <br>
+    <img src="dtreeviz/visualizations/clf_dtreeviz_general.svg" class="img-fluid" alt="...">
+    <p>The histograms in individual nodes show the feature (of certain split) space distribution. Adding color gives us
+      an indication of the relationship between feature space and target class.</p>
+    <br>
+    <br>
+    <a href="dtreeviz/dtreeviz_classifier.html" target="_blank">See the Original Jupyter Notebook</a>
+    <br>
+    <br>
+
+    <h4>Regressor</h4>
+    <br>
+    <img src="dtreeviz/visualizations/rgr_dtreeviz_general.svg" class="img-fluid" alt="...">
+    <p>Horizontal dashed lines in the scatterplots of individual nodes indicate the target mean for the left and right
+      buckets in decision nodes; a vertical dashed line indicates the split point in feature space. The black wedge
+      highlights the split point and identifies the exact split value. Leaf nodes indicate the target prediction (mean)
+      with a dashed line.</p>
+    <br>
+    <br>
+    <a href="dtreeviz/dtreeviz_regressor.html" target="_blank">See the Original Jupyter Notebook</a>
+    <br>
+
+  </div>
+
+</body>
+
+</html>

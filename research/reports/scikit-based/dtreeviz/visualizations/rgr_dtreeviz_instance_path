@@ -1,0 +1,60 @@
+
+        digraph G {
+            splines=line;
+            nodesep=0.1;
+            ranksep=.2;
+            rankdir=TD;
+            margin=0.0;
+            
+            node [margin="0.03" penwidth="0.5" width=.1, height=.1];
+            edge [arrowsize=.4 penwidth="0.3"]
+
+            node2 [margin="0" shape=box penwidth=".5" color="#D67C03" style="dashed" label=<<table border="0">
+                    
+                    <tr>
+                            <td><img src="/tmp/node2_69451.svg"/></td>
+                    </tr>
+                    </table>>]
+	node1 [margin="0" shape=box penwidth=".5" color="#D67C03" style="dashed" label=<<table border="0">
+                    
+                    <tr>
+                            <td><img src="/tmp/node1_69451.svg"/></td>
+                    </tr>
+                    </table>>]
+	node0 [margin="0" shape=box penwidth=".5" color="#D67C03" style="dashed" label=<<table border="0">
+                    
+                    <tr>
+                            <td><img src="/tmp/node0_69451.svg"/></td>
+                    </tr>
+                    </table>>]
+            node2 -> leaf3 [penwidth=1.2 fontname="Arial" color="#D67C03" label=<> fontcolor="#444443"]
+	node1 -> node2 [penwidth=1.2 fontname="Arial" color="#D67C03" label=<> fontcolor="#444443"]
+	node0 -> node1 [penwidth=1.2 fontname="Arial" color="#D67C03" label=<> fontcolor="#444443"]
+            leaf3 [margin="0" shape=box penwidth=".5" color="#D67C03" style="dashed" label=<<table border="0">
+                
+                <tr>
+                        <td><img src="/tmp/leaf3_69451.svg"/></td>
+                </tr>
+                </table>>]
+
+            
+            
+                    subgraph cluster_instance {
+                        style=invis;
+                        X_y [penwidth="0.3" margin="0" shape=box margin="0.03" width=.1, height=.1 label=<
+                        
+                        <table border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td cellpadding="1" align="right" bgcolor="white"><font face="Arial" color="#D67C03" point-size="11">feature_3</font></td><td cellpadding="1" align="right" bgcolor="white"><font face="Arial" color="#D67C03" point-size="11">feature_2</font></td><td cellpadding="1" align="right" bgcolor="white"><font face="Arial" color="#D67C03" point-size="11">feature_32</font></td><td cellpadding="1" align="right" bgcolor="white"><font face="Arial" color="#444443" point-size="11">...</font></td>
+                        </tr>
+                        <tr>
+                            <td cellpadding="1" align="right" bgcolor="white"><font face="Arial" color="#D67C03" point-size="11">0.00</font></td><td cellpadding="1" align="right" bgcolor="white"><font face="Arial" color="#D67C03" point-size="11">0.00</font></td><td cellpadding="1" align="right" bgcolor="white"><font face="Arial" color="#D67C03" point-size="11">1.00</font></td><td cellpadding="1" align="right" bgcolor="white"><font face="Arial" color="#444443" point-size="11">...</font></td>
+                        </tr>
+                        </table>
+                        
+                        >]
+                    }
+                    leaf3 -> X_y [dir=back; penwidth="1.2" color="#D67C03" label=<<font face="Arial" color="#444443" point-size="11">  Prediction<br/> 0.20</font>>]
+                    
+        }
+            

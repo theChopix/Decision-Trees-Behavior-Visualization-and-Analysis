@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Research Documentation</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <style>
+    body {
+      padding-top: 80px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../../docs.html">Research Documentation</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+        aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Visualization Methods</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../../docs.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../catboost-native/docs.html">catboost-native</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../scikit-based/docs.html">scikit-based</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../js-based/docs.html">js-based</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../sankey/docs.html">sankey</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">baobabdt</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <h2>PyBaobabDT</h2>
+    <p>The pybaobabdt package provides a python implementation for the visualization of decision trees. The technique is
+      based on the scientific paper BaobabView: Interactive construction and analysis of decision trees developed by the
+      TU/e.</p>
+    <br>
+    <img src="visualizations/tree.png" class="img-fluid" alt="...">
+    <p>Visualization shows data streams flowing across each node displaying concerned split feature and threshold (each
+      class is represented by a color, the width of the link represents the number of items flowing from one node to the
+      other).</p>
+    <br>
+    <p>Visualization shows data streams flowing across each node displaying concerned split feature and threshold (each
+      class is represented by a color, the width of the link represents the number of items flowing from one node to the
+      other).
+
+      Although the visualization solution provided by the pybaobab library fully meets the need to see data flows
+      flowing through the model structure, it is not compatible with catboost models.</p>
+
+    <a href="pybabobabdt-docs.html" target="_blank">See the Original Jupyter Notebook</a>
+
+  </div>
+
+</body>
+
+</html>

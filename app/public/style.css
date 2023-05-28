@@ -1,0 +1,54 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+} 
+
+header {
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    word-spacing: 0.05em;
+    font-size: 20px;
+    text-underline-offset: 10px;
+}
+
+#instance-idx-div {
+    display: none;
+}
+
+#multiple-opts-div {
+    display: none;
+}
+
+#mark-select {
+    display: none;
+}
+
+#string-operation-select {
+    display: none;
+}
+
+#constant-input {
+    display: none;
+}
+
+#regexp-input {
+    display: none;
+}
+
+#tree-idx-alert {
+    display: none;
+}
+
+#get-visualization {
+    display: none;
+}
+
+#baseline-tree-idx-alert {
+    display: none;
+}
+
+#get-baseline-visualization {
+    display: none;
+}

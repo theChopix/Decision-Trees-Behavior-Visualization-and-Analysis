@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Research Documentation</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <style>
+    body {
+      padding-top: 80px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Research Documentation</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+        aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Visualization Methods</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reports/catboost-native/docs.html">catboost-native</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reports/scikit-based/docs.html">scikit-based</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reports/js-based/docs.html">js-based</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reports/sankey/docs.html">sankey</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reports/baobabdt/docs.html">baobabdt</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <h2>Research Documentation</h2>
+    <p>This documentation offers a brief overview of visualization methods in the form of existing libraries, which were
+      presented and taken into account before the creation of the application itself.
+
+      For more detailed information, it is possible to view (and run) the jupyter notebooks themselves in individual
+      directories of python-based libraries. The most detailed and theoretical overview with comments is given in the
+      written part of the bachelor's thesis.
+      <br><br>
+      Images of individual visualizations in this documentation
+      often do not directly relate to the model provided by seznam.cz due to
+      incompatibility with catboost. in some cases [scikit-based] a new model is trained with validation data provided
+      by seznam.cz to demonstrate the visualization. Elsewhere, due to the specificity of the method, the model is
+      trained on completely different data given in the documentation of the library itself [pybaobabdt].
+    </p>
+    <h4>Content</h4>
+    <ul>
+      <li><b>catboost-native</b></li>
+      <ul>
+        <li>The library that is used to create the model provides itself visualization function which captures the
+          structure of decision trees in model. This is the baseline method that is now most used in practice and which
+          can then be compared with the proposed solution.</li>
+      </ul>
+      <li><b>scikit-based</b></li>
+      <ul>
+        <li>One of the most popular machine-learning libraries offers decision tree visualization methods, but due to
+          differences in model implementation, they are not compatible with catboost models. This section also describes
+          the dtreeviz library for more detailed visualizations that are compatible with scikit-learn models.</li>
+      </ul>
+      <li><b>js-based</b></li>
+      <ul>
+        <li>A javascript library for creating interactive visualizations was also taken into consideration. Due to the
+          complexity of the implementation that this visualization method required, the implementation in the form of a
+          small application was removed from the documentation. Demonstration pictures are available for viewing.</li>
+      </ul>
+      <li><b>sankey</b></li>
+      <ul>
+        <li>The method and library, which is ultimately used in the application itself, after customization offers a
+          view of the
+          flow of data passing through the structure of the model.</li>
+      </ul>
+      <li><b>baobabdt</b></li>
+      <ul>
+        <li>This library provides a view of the data flows passing through the model along with the model structure
+          itself for scikit models. This is an existing technique that most closely resembles the proposed solution.
+        </li>
+      </ul>
+    </ul>
+  </div>
+
+</body>
+
+</html>
