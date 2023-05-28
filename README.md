@@ -6,10 +6,9 @@ repository for the Bachelor Thesis commissioned by company Seznam.cz with the to
 
 The project consists of two main folders. In the "research" folder , you can find the work process that took place before creating the custom solution (captured in html documentation). In the "app" folder, you can find the actual application as the proposed solution.
 
-
 ### Libraries and Environment
 
-Generally, using the provided virtual environment 'venv' should be sufficient for successful application execution. Otherwise, it is essential to install the following Python libraries: 'pandas', 'plotly', 'catboost', which are used in the scripts. To run the script, the 'python3' command is used in the 'app.js' file. If you are not using this version, you can manually modify it to your preferred version in the file.
+It is essential to install the following Python libraries: 'pandas', 'plotly', 'catboost', which are used in the scripts. To run the script, the 'python3' command is used in the 'app.js' file. If you are not using this version, you can manually modify it to your preferred version in the file.
 
 If you encounter any other issues, please contact the application developer directly at kratkja8@fel.cvut.cz.
   
@@ -24,7 +23,7 @@ If you encounter any other issues, please contact the application developer dire
   <li>Once the dependencies are installed, you can start the Node.js app by running the following command:  
   <b>`node app.js`</b>  
   This command will execute the app.js file and start your web app.</li>
-  <li>Open a web browser and visit http://localhost:3000.</li>
+  <li>Open a web browser and visit http://localhost:5000.</li>
 </ol>
 
 
